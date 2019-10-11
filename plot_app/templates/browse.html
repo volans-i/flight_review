@@ -1,16 +1,6 @@
 
 {% include 'header.html' %}
 
-<h3>Browse public Log Files</h3>
-
-<p>
-Use <a href="https://github.com/PX4/flight_review/blob/master/download_logs.py">
-this script</a> for automated download of public log files.
-</p>
-
-<p>
-
-</p>
 
 <table id="logs_table" style="border-collapse: collapse !important"
 	class="table table-sm table-striped table-bordered table-condensed">
@@ -56,7 +46,7 @@ $(document).ready(function() {
             "search": {{ initial_search }}
         },
 {% endif %}
-            "order": [[1, 'desc']], 
+            "order": [[1, 'desc']],
             "ordering": true,
             "lengthMenu": [10, 25, 50, 75, 100],
 
